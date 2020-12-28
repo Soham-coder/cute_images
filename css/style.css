@@ -1,0 +1,105 @@
+* {
+  font-family: 'Pacifico', sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+section {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  position: relative;
+  width: 100vw;
+}
+
+img {
+  height: 100vh;
+  object-fit: cover;
+  width: 100vw;
+}
+
+p {
+  color: #111;
+  font-size: 30px;
+  left: 100px;
+  position: absolute;
+  top: 50px;
+}
+
+.ParallaxVideo{ 
+    height: 300px;
+    padding-bottom: 50px;
+    padding-top: 50px; 
+}
+.ParallaxVideo video{ 
+    min-width: 100%;
+    position: fixed;
+    top:0;
+    z-index: -999;
+}
+.ParallaxVideo h1 {
+  color: #fff;
+  font-size: 76px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+section:nth-child(2) p {
+  left: 80%;
+}
+
+section:nth-child(4) p {
+  color: #3240e3;
+}
+
+section:nth-child(5) p {
+  color: #fff;
+}
+
+section:nth-of-type(2) {
+  background-image: url('../img/bunny.jpg');
+}
+
+section:nth-of-type(3) {
+  background-image: url('../img/gorilla.jpg');
+}
+
+section:nth-of-type(4) {
+  background-image: url('../img/cat-dog.jpg');
+}
+
+section:nth-of-type(5) {
+  background-image: url('../img/koala.jpg');
+}
+
+section:nth-of-type(6) {
+  background-image: url('../img/bulldog.jpg');
+}
+
+@media screen and (max-width: 1030px) {
+  section {
+    background-attachment: scroll;
+  }
+
+  section:nth-child(2) p {
+    left: 70%;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  section:nth-child(2) p {
+    left: 0%;
+  }
+
+  p {
+    left: 0;
+    text-align: center;
+    top: 0;
+    width: 100%;
+  }
+}
