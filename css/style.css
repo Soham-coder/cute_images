@@ -42,9 +42,9 @@ p {
     z-index: -999;
 }
 .ParallaxVideo h1 {
-  color: #f00;
-  font-size: 40px;
-  font-weight: 700;
+  color: #ff0000;
+  font-size: 35px;
+  font-weight: 400;
   text-align: center;
   text-transform: uppercase;
 }
